@@ -42,7 +42,7 @@ sudo dpkg -i $DIRETORIO_DOWNLOADS/*.deb
 # Instalar programas no apt
 for nome_do_programa in ${PROGRAMAS_PARA_INSTALAR[@]}; do
   if ! dpkg -l | grep -q $nome_do_programa; then # Só instala se já não estiver instalado
-    apt install "$nome_do_programa" -y
+    sudo apt install "$nome_do_programa" -y
   else
     echo "[INSTALADO] - $nome_do_programa"
   fi
@@ -52,10 +52,10 @@ done
 
 ## Instalando pacotes Flatpak ##
 
-flatpak install flathub com.spotify.Client #Spotify
-flatpak install flathub org.deluge_torrent.deluge #Deluge
-flatpak install flathub org.videolan.VLC #VLC
-flatpak install flathub com.getferdi.Ferdi #Ferdi
+flatpak install flathub com.spotify.Client -y #Spotify
+flatpak install flathub org.deluge_torrent.deluge -y #Deluge
+flatpak install flathub org.videolan.VLC -y #VLC
+flatpak install flathub com.getferdi.Ferdi -y #Ferdi
 
 ## Instalando pacotes Snap ##
 
