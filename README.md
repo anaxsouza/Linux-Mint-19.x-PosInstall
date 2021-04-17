@@ -1,2 +1,2 @@
-# Linux-Mint-19.x-PosInstall
-Shell Script de pós instalação do Linux Mint 19.x para utilização pessoal.
+# Pop_OS-PostInstall
+Shell Script de pós instalação do Pop_OS! para utilização pessoal.
