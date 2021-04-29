@@ -55,7 +55,6 @@ done
 flatpak install flathub com.spotify.Client -y #Spotify
 flatpak install flathub org.deluge_torrent.deluge -y #Deluge
 flatpak install flathub org.videolan.VLC -y #VLC
-flatpak install flathub com.getferdi.Ferdi -y #Ferdi
 
 ## Instalando pacotes Snap ##
 
