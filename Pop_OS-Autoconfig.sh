@@ -3,7 +3,7 @@
 
 URL_GOOGLE_CHROME="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 URL_VS_CODE="https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
-URL_GITHUB_DESKTOP="https://github.com/shiftkey/desktop/releases/download/release-2.7.2-linux1/GitHubDesktop-linux-2.7.2-linux1.deb"
+URL_GITHUB_DESKTOP="https://github.com/shiftkey/desktop/releases/download/release-2.8.3-linux1/GitHubDesktop-linux-2.8.3-linux1.deb"
 
 DIRETORIO_DOWNLOADS="$HOME/Downloads/programas"
 
