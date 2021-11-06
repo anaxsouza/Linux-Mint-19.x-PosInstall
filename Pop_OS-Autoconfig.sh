@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 # ----------------------------- VARIÁVEIS ----------------------------- #
 
-URL_GOOGLE_CHROME="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
-URL_VS_CODE="https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
-URL_GITHUB_DESKTOP="https://github.com/shiftkey/desktop/releases/download/release-2.8.3-linux1/GitHubDesktop-linux-2.8.3-linux1.deb"
-
 DIRETORIO_DOWNLOADS="$HOME/Downloads/programas"
 
 PROGRAMAS_PARA_INSTALAR=(
-
+filezilla
+paraview
+steam
 )
 # ---------------------------------------------------------------------- #
 
@@ -30,13 +28,13 @@ sudo apt update -y
 sudo apt update -y
 
 ## Download e instalaçao de programas externos ##
-mkdir "$DIRETORIO_DOWNLOADS"
-wget -c "$URL_GOOGLE_CHROME"       -P "$DIRETORIO_DOWNLOADS"
-wget -c "$URL_VS_CODE"             -P "$DIRETORIO_DOWNLOADS"
-wget -c "$URL_GITHUB_DESKTOP"      -P "$DIRETORIO_DOWNLOADS"
+#mkdir "$DIRETORIO_DOWNLOADS"
+#wget -c "$URL_GOOGLE_CHROME"       -P "$DIRETORIO_DOWNLOADS"
+#wget -c "$URL_VS_CODE"             -P "$DIRETORIO_DOWNLOADS"
+#wget -c "$URL_GITHUB_DESKTOP"      -P "$DIRETORIO_DOWNLOADS"
 
 ## Instalando pacotes .deb baixados na sessão anterior ##
-sudo dpkg -i $DIRETORIO_DOWNLOADS/*.deb
+#sudo dpkg -i $DIRETORIO_DOWNLOADS/*.deb
 
 # Instalar programas no apt
 for nome_do_programa in ${PROGRAMAS_PARA_INSTALAR[@]}; do
