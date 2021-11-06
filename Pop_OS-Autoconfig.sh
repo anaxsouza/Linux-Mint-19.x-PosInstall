@@ -55,6 +55,7 @@ flatpak install flathub com.spotify.Client -y #Spotify
 flatpak install flathub org.deluge_torrent.deluge -y #Deluge
 flatpak install flathub org.videolan.VLC -y #VLC
 flatpak install flathub com.discordapp.Discord -y #Discord
+flatpak install flathub org.onlyoffice.desktopeditors #OnlyOffice
 
 ## Instalando pacotes Snap ##
 
@@ -79,13 +80,6 @@ wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo tee /etc/apt/t
 sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftkey-desktop.list'
 sudo apt-get update
 sudo apt install github-desktop
-
-## Instalando Only Office ##
-
-sudo sh -c "echo  'deb http://download.onlyoffice.com/repo/debian squeeze main' >> /etc/apt/sources.list"
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys CB2DE8E5
-sudo apt-get update
-sudo apt-get install onlyoffice-desktopeditors
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------- #
 
