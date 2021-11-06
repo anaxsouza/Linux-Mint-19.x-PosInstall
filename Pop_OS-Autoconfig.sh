@@ -24,7 +24,7 @@ sudo apt update -y
 
 # ---------------------------------------------------------------------- #
 
-# ----------------------------- EXECUÇÃO ----------------------------- #
+# ----------------------------- EXECUÇÃO --------------------------------------------------------------------------------------------------------------- #
 ## Atualizando o repositório depois da adição de novos repositórios ##
 sudo apt update -y
 
@@ -79,7 +79,14 @@ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/
 sudo apt-get update
 sudo apt install github-desktop
 
-# ---------------------------------------------------------------------- #
+## Instalando Only Office ##
+
+sudo sh -c "echo  'deb http://download.onlyoffice.com/repo/debian squeeze main' >> /etc/apt/sources.list"
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys CB2DE8E5
+sudo apt-get update
+sudo apt-get install onlyoffice-desktopeditors
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------------- #
 
 # ----------------------------- PÓS-INSTALAÇÃO ----------------------------- #
 ## Finalização, atualização e limpeza##
