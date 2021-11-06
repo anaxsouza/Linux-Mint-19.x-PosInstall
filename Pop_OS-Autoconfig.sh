@@ -53,7 +53,15 @@ flatpak install flathub com.spotify.Client -y #Spotify
 flatpak install flathub org.deluge_torrent.deluge -y #Deluge
 flatpak install flathub org.videolan.VLC -y #VLC
 flatpak install flathub com.discordapp.Discord -y #Discord
+
 ## Instalando pacotes Snap ##
+
+## Instalando VScode ##
+
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add –
+sudo add-apt-repository “deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main”
+sudo apt install code
 
 # ---------------------------------------------------------------------- #
 
