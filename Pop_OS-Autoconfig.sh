@@ -7,6 +7,7 @@ PROGRAMAS_PARA_INSTALAR=(
 filezilla
 paraview
 steam
+zoom
 )
 # ---------------------------------------------------------------------- #
 
