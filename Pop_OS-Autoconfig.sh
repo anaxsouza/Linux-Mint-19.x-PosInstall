@@ -7,7 +7,6 @@ PROGRAMAS_PARA_INSTALAR=(
 filezilla
 paraview
 steam
-zoom
 wine
 )
 # ---------------------------------------------------------------------- #
@@ -79,6 +78,15 @@ wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo tee /etc/apt/t
 sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftkey-desktop.list'
 sudo apt-get update
 sudo apt install github-desktop
+
+##Instalando Papirus
+
+sudo add-apt-repository ppa:papirus/papirus
+sudo apt install papirus-icon-theme
+
+##Instalando Gnome Tweaks
+
+sudo apt install gnome-tweaks
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------- #
 
