@@ -57,6 +57,9 @@ flatpak install flathub com.discordapp.Discord -y #Discord
 
 ## Instalando pacotes Snap ##
 
+sudo apt install snapd
+sudo snap install authy
+
 ## Instalando VScode ##
 
 sudo apt install software-properties-common apt-transport-https wget
