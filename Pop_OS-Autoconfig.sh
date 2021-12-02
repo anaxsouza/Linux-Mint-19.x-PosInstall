@@ -8,6 +8,8 @@ filezilla
 paraview
 steam
 wine
+gnome-shell-extensions
+gnome-tweaks
 )
 # ---------------------------------------------------------------------- #
 
@@ -68,13 +70,6 @@ sudo add-apt-repository “deb [arch=amd64] https://packages.microsoft.com/repos
 sudo apt-get update
 sudo apt install code
 
-## Instalando Google Chrome ##
-
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install google-chrome-stable
-
 ## Instalando Github Desktop ##
 
 wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo tee /etc/apt/trusted.gpg.d/shiftkey-desktop.asc > /dev/null
@@ -86,10 +81,6 @@ sudo apt install github-desktop
 
 sudo add-apt-repository ppa:papirus/papirus
 sudo apt install papirus-icon-theme
-
-##Instalando Gnome Tweaks
-
-sudo apt install gnome-tweaks
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------- #
 
