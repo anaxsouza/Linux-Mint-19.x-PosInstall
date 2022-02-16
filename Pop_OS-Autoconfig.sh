@@ -4,10 +4,6 @@
 DIRETORIO_DOWNLOADS="$HOME/Downloads/programas"
 
 PROGRAMAS_PARA_INSTALAR=(
-filezilla
-paraview
-steam
-wine
 gnome-shell-extensions
 gnome-tweaks
 discord
@@ -49,13 +45,19 @@ for nome_do_programa in ${PROGRAMAS_PARA_INSTALAR[@]}; do
   fi
 done
 
-##sudo apt install --install-recommends winehq-stable wine-stable wine-stable-i386 wine-stable-amd64 -y
+sudo apt install --install-recommends winehq-stable wine-stable wine-stable-i386 wine-stable-amd64 -y
 
 ## Instalando pacotes Flatpak ##
 
 flatpak install flathub com.spotify.Client -y #Spotify
 flatpak install flathub org.deluge_torrent.deluge -y #Deluge
-flatpak install flathub org.videolan.VLC -y #VLC
+flatpak install flathub io.github.shiftey.Desktop -y #GitHub Desktop
+flatpak install flathub org.filezillaproject.Filezilla -y #Filezilla
+flatpak install flathub com.valvesoftware.Steam -y #Steam
+flatpak install flathub org.paraview.ParaView -y #ParaView
+flatpak install flathub com.stremio.Stremio -y #Stremio
+flatpak install flathub com.rtosta.zapzap -y #ZapZap
+flatpak install flathub us.zoom.Zoom -y #Zoom
 
 ## Instalando pacotes Snap ##
 
@@ -72,10 +74,10 @@ sudo apt install code
 
 ## Instalando Github Desktop ##
 
-wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo tee /etc/apt/trusted.gpg.d/shiftkey-desktop.asc > /dev/null
-sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftkey-desktop.list'
-sudo apt-get update
-sudo apt install github-desktop
+#wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo tee /etc/apt/trusted.gpg.d/shiftkey-desktop.asc > /dev/null
+#sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftkey-desktop.list'
+#sudo apt-get update
+#sudo apt install github-desktop
 
 ##Instalando Papirus
 
