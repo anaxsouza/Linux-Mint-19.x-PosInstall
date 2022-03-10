@@ -51,13 +51,8 @@ sudo apt install --install-recommends winehq-stable wine-stable wine-stable-i386
 
 flatpak install flathub com.spotify.Client -y #Spotify
 flatpak install flathub org.deluge_torrent.deluge -y #Deluge
-flatpak install flathub io.github.shiftey.Desktop -y #GitHub Desktop
 flatpak install flathub org.filezillaproject.Filezilla -y #Filezilla
-flatpak install flathub com.valvesoftware.Steam -y #Steam
-flatpak install flathub org.paraview.ParaView -y #ParaView
 flatpak install flathub com.stremio.Stremio -y #Stremio
-flatpak install flathub com.rtosta.zapzap -y #ZapZap
-flatpak install flathub us.zoom.Zoom -y #Zoom
 
 ## Instalando pacotes Snap ##
 
