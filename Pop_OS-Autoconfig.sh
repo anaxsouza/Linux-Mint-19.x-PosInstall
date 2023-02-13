@@ -6,7 +6,6 @@ DIRETORIO_DOWNLOADS="$HOME/Downloads/programas"
 PROGRAMAS_PARA_INSTALAR=(
 gnome-shell-extensions
 gnome-tweaks
-discord
 )
 # ---------------------------------------------------------------------- #
 
@@ -14,12 +13,6 @@ discord
 ## Removendo travas eventuais do apt ##
 sudo rm /var/lib/dpkg/lock-frontend
 sudo rm /var/cache/apt/archives/lock
-
-## Adicionando/Confirmando arquitetura de 32 bits ##
-sudo dpkg --add-architecture i386
-
-## Atualizando o repositório ##
-sudo apt update -y
 
 # ---------------------------------------------------------------------- #
 
@@ -45,14 +38,13 @@ for nome_do_programa in ${PROGRAMAS_PARA_INSTALAR[@]}; do
   fi
 done
 
-sudo apt install --install-recommends winehq-stable wine-stable wine-stable-i386 wine-stable-amd64 -y
-
 ## Instalando pacotes Flatpak ##
 
 flatpak install flathub com.spotify.Client -y #Spotify
-flatpak install flathub org.deluge_torrent.deluge -y #Deluge
+flatpak install flathub de.haeckerfelix.Fragments #Fragments
 flatpak install flathub org.filezillaproject.Filezilla -y #Filezilla
-flatpak install flathub com.stremio.Stremio -y #Stremio
+flatpak install flathub io.github.jeffshee.Hidamari #Hidamari
+flatpak install flathub com.axosoft.GitKraken #GitKraken
 
 ## Instalando pacotes Snap ##
 
@@ -66,13 +58,6 @@ wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add
 sudo add-apt-repository “deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main”
 sudo apt-get update
 sudo apt install code
-
-## Instalando Github Desktop ##
-
-#wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo tee /etc/apt/trusted.gpg.d/shiftkey-desktop.asc > /dev/null
-#sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftkey-desktop.list'
-#sudo apt-get update
-#sudo apt install github-desktop
 
 ##Instalando Papirus
 
